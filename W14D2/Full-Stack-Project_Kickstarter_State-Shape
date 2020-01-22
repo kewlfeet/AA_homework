@@ -1,0 +1,80 @@
+{
+  entities: {
+    projects: {
+      1: {
+        id: 1,
+        title: "World's most powerful speaker",
+        creatorId: 11,
+        supporters: 1, 4, 5,8
+        followers: 1,3,4,5,8,10
+      },
+
+      2: {
+        id: 2,
+        title: "NeoBoard - World's most advanced skateboard",
+        creatorId: 25,
+        supporters: 1, 4, 5,8
+        followers: 1,3,4,5,8,10
+      },
+      3: {
+        id: 3,
+        title: "The Monkey and the Frog - A modern approach to children's story books",
+        creatorId: 11,
+        supporters: 1, 4, 5,8
+        followers: 1,3,4,5,8,10
+      }
+    },
+    users: {
+      11: {
+        id: 11,
+        username: "james",
+        projectsCreated:
+        projectsSupported: 3
+        projectsFollowing: 3, 6
+      },
+      25: {
+        id: 25,
+        username: "tommy",
+        projectsCreated: 6
+        projectsSupported: 4, 8, 10
+        projectsFollowing: 4, 7, 8 , 10 ,14
+      }
+    },
+    projectFollows: {
+      10: {
+        followerId: 11,
+        projectId: 1,
+      },
+      11: {
+        followerId: 25,
+        projectId: 1,
+      },
+      12: {
+        followerId: 25,
+        projectId: 3,
+      },
+    },
+    projectSupporters: {
+      10: {
+        supporterId: 11,
+        projectId: 1,
+      },
+      11: {
+        supporterId: 25,
+        projectId: 1,
+      },
+      12: {
+        supporterId: 25,
+        projectId: 3,
+      },
+    }
+  },
+  ui: {
+    loading: true/false
+  },
+  errors: {
+    login: ["Incorrect username/password combination"],
+    createProjectForm: ["Project Title and Body cannot be blank"],
+  },
+  session: { currentUserId: 25 }
+}
